@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } /*removes white band around the page */
+
 body {
     background-color: rgb(195, 186, 186);
 }
