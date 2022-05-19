@@ -8,24 +8,25 @@ body {
     background-color: rgb(195, 186, 186);
 }
 
-.nav {
-    border: 1mm solid rgb(232, 13, 13);
-}
-
 h1, h2 {
     color: white;
 }
 
-main {
-    border: 1mm ridge rgb(111, 8, 207);
-    background-color: rgba(145, 141, 150, 0.721);
-}
-
 .video {
-    border-top: 0.5mm ridge rgb(111, 8, 207);
+    display: flex;
+    justify-content: center;
 }
 
-section {
-    border: 1mm inset rgb(6, 32, 123);
-    background-color: rgba(145, 141, 150, 0.721);
+h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.interests {
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    margin-right: 15px;
 }
