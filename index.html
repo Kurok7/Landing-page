@@ -54,31 +54,47 @@
     </section>
     <br/>
     <p>If interested in more, sign up for my newsletter!</p>
-    <form>
-        <div>
-            Name: <input type="text"/>
-            
-        </div>
-        <div>
-            Email: <input type="email" required/>
-        </div>
-        <div>
+    <form action="" method="post">
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Full Name" name="Full_name"/>  
+            </li>
+            <li>
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="example@email.com" name="email"/>
+            </li>
+            <li>
+                <label for="msg">Message:</label>
+                <textarea name="message" id="msg" cols="30" rows="7"></textarea>
+            </li>
+        </ul>
+        <!-- <div>   
             What interest do we have most in common?
-            <select>
-                <option>Anime</option>
-                <option>Video Games</option>
-                <option>Writing</option>
-                <option>Working Out</option>
+            <select name="interests">
+                <option value="anime">Anime</option>
+                <option value="video games">Video Games</option>
+                <option value="writing">Writing</option>
+                <option value="health">Working Out</option>
             </select>
-        </div>
+        </div> -->
+        <br>
+        <fieldset>
+            <legend>Most Shared Interest</legend>
+                <input type="radio" id="anime" name="interest" value="anime">
+                <label for="anime">Anime</label>
+                <input type="radio" id="video game" name="interest" value="video game">
+                <label for="video game">Video Games</label>
+                <input type="radio" id="writing" name="interest" value="writing">
+                <label for="writing">Writing</label>
+                <input type="radio" id="health" name="interest" value="health">
+                <label for="health">Working Out</label>
+        </fieldset>
         <div>
-            <input type="submit" value="Subscribe"/>
+            <button type="submit">Subscribe</button>
         </div>
     </form>
     <br/>
     <footer>&copy;Juan Malone 2022</footer>
 </body>
-<!-- <button type="button">Subscribe Now!</button> This is for near the end for people
-to sign up for my newsletter. Include textbox for them to input email and include 
-'Sign up for my newsletter to receive updates' before the text box.  -->
 </html>
