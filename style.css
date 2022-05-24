@@ -64,6 +64,10 @@ form {
     /* To make sure that all text fields have the same font settings
        By default, textarea's have a monospace font */
     font: 1em sans-serif;
+    border: 3px solid #000;
+    margin-bottom: 15px;
+    padding: 5px;
+    border-radius: 5px;
   
     /* Uniform text field size */
     width: 300px;
@@ -72,28 +76,15 @@ form {
     /* Match form field borders */
     border: 1px solid #999;
   }
-  
-  input:focus,
-  textarea:focus {
-    /* Additional highlight for focused elements */
-    border-color: #000;
+
+  input:invalid {
+    border-color: red;
   }
   
-  textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-  
-    /* Provide space to type some text */
-    height: 5em;
+  input:valid {
+    border-color: green;
   }
-  
-  .button {
-    /* Align buttons with the text fields */
-    padding-left: 90px; /* same size as the label elements */
-  }
-  
-  button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-    margin-left: .5em;
+
+  input::placeholder {
+    color: rgb(86, 86, 227);
   }
