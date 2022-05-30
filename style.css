@@ -24,12 +24,14 @@ h2 {
 
 .interests {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 figure {
     color: black;
-    margin-right: 15px;
+    border: 2px ridge black;
+    padding: 3px;
+    background-color: rgb(193, 182, 182);
 }
 
 form {
@@ -38,18 +40,15 @@ form {
     width: 400px;
     /* Form outline */
     padding: 1em;
-    border: 4px dashed rgb(19, 16, 201);
+    border: 3px solid rgb(19, 16, 201);
     border-radius: 1em;
+    background-color: rgb(193, 182, 182);
   }
   
   ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  form li + li {
-    margin-top: 1em;
   }
   
   label {
@@ -64,7 +63,7 @@ form {
     /* To make sure that all text fields have the same font settings
        By default, textarea's have a monospace font */
     font: 1em sans-serif;
-    border: 3px solid #000;
+    border: 1px solid #000;
     margin-bottom: 15px;
     padding: 5px;
     border-radius: 5px;
@@ -77,6 +76,10 @@ form {
     border: 1px solid #999;
   }
 
+  fieldset {
+    margin-right: 13ex;
+  }
+
   input:invalid {
     border-color: red;
   }
@@ -85,6 +88,14 @@ form {
     border-color: green;
   }
 
-  input::placeholder {
-    color: rgb(86, 86, 227);
+  button[type] {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(19, 16, 201);
+    color: white
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
   }
