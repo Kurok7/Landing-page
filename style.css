@@ -8,33 +8,36 @@
   background-color: #1f2937;
 }
 
+
 .main-nav {
-  display: flex;
   list-style: none;
   margin: 0;
+  padding: 0;
 }
 
 li {
-  display: flex;
-  align-items: flex-end;
+  display: inline;
+  padding: 5px;
+  color: white;
 }
 
 .social-links {
-  margin-left: auto;
+  display: inline;
+  float: right; 
+}
+
+a:visited {
+  color: white;
 }
 
 h1, p {
   font-size: 48px;
   color: #f9faf8;
+  padding-left: 2px;
 }
 
 p {
   font-size: 18px;
-}
-
-.video {
-    display: flex;
-    justify-content: center;
 }
 
 h2 {
@@ -55,19 +58,26 @@ figure {
 }
 
 .end {
+  /* text-align: center; */
   background-color: #3882f6;
+  margin: 3em 30em 0em 9em;
+  padding: 2em;
+  border-radius: 1em;
 }
 
-/* .button {
-  display: flex;
-  justify-content: flex-end;
-} */
+.top-btn {
+  margin-left: 4rem;
+}
+
+span {
+  margin-left: 8em;
+}
 
  button[type] {
   background-color: #3882f6;
   color: white;
   padding: 4px 20px 4px 20px;
-  margin-left: 40em;
+  /* margin-left: 40em;  separate for each button*/
   border-radius: 0.5rem;
   border-color: white;
 }
