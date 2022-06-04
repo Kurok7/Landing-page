@@ -18,7 +18,7 @@
 li {
   display: inline;
   padding: 5px;
-  color: white;
+  /* color: white; */
 }
 
 .social-links {
@@ -26,8 +26,8 @@ li {
   float: right; 
 }
 
-a:visited {
-  color: white;
+i:hover {
+  color: blue;
 }
 
 h1, p {
